@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Hier komt informatie die de browser nodig heeft, zoals de titel van de pagina die bovenaan in het tabblad wordt weergegeven. -->
+		<title>js en css - Mijn favoriete vakantiebestemming Mathis Dewulf 6DATA</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="text.css">
+
+		<!-- Meta tags om caching uit te schakelen -->
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+	</head>
+
+	<body>
+		<!-- Navigation Bar -->
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">Ibiza</a></li>
+			<li><a href="#links">Meer informatie</a></li>
+			<li><a href="#kosten">Kostenoverzicht</a></li>
+		</ul>
+
+		<!-- Hier komt de datum en tijd die de gebruiker kan zien. -->
+		<p id="datetime"></p>
+
+		<!-- Hier komt alle inhoud die aan de gebruiker wordt getoond, zoals tekst, afbeeldingen, links, enzovoort. -->
+		<h1 id="home">Mijn favoriete vakantiebestemming</h1>
+		<!-- Hier komt de datum en tijd die de gebruiker kan zien. -->
+		<p id="datetime"></p>
+		<p>De eerste vakantiebestemming die ik kon bedenken.<br>
+            Ibiza is ook een mooie bestemming.</p>
+
+		<!-- Spinning text -->
+		<p id="spinning-text" onclick="toggleSpin()">
+			Van andere vakantiebestemmingen word ik draaierig</p>
+		<br>
+
+		<img src="vakantie.jpg" alt="Afbeelding van de bestemming" id="about" class="shakeable" onclick="toggleShake()">
+		<br>
+		<a href="https://www.vakantiediscounter.be/spanje/ibiza?gad_source=1" id="links">Klik hier voor meer info</a>
+		<br>
+		<a href="https://www.youtube.com/watch?v=0mkDrYXVYA4">Klik hier voor een grote korting</a>
+		<br>
+
+		<!-- Hier komt de tabel die de gebruiker kan zien. -->
+		<h2 id="kosten">Kostenoverzicht</h2>
+		<table>
+			<tr>
+				<th>Item</th>
+				<th>Kosten</th>
+			</tr>
+			<tr>
+				<td>Vliegticket</td>
+				<td>€500</td>
+			</tr>
+			<tr>
+				<td>Hotel</td>
+				<td>€300</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Totaal</th>
+			</tr>
+			<tr>
+				<td>€800</td>
+			</tr>
+		</table>
+
+		<!-- Onderteken en dateer de pagina, wees beleefd! -->
+		<address>
+			Gemaakt 5 april 2004<br>
+			door Dewulf Mathis<br>
+			6DATA
+		</address>
+		<!-- JavaScript -->
+		<script 
+			src="script.js">
+		</script>	
+	</body>
+</html>

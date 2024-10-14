@@ -1,0 +1,96 @@
+body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman",
+    Times, serif;
+  color: blueviolet;
+  background-color: cyan }
+
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em }
+
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif }
+
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+ul.navbar a {
+  text-decoration: none }
+
+a:link {
+  color: blue }
+a:visited {
+  color: purple }
+
+address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted }
+
+/* Style for tables */
+table {
+  width: 60%; /* Set the table width */
+  margin: 15px auto; /* Center the table */
+  border-collapse: collapse; /* Ensures borders are not doubled */
+}
+
+th, td {
+  border: 1px solid #333; /* Border around each cell */
+  padding: 8px; /* Padding inside cells */
+  text-align: center; /* Center-align text */
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background for header */
+}
+
+td {
+  background-color: #b6b6b6; /* Light gray background for cells */
+}
+
+#datetime {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px }
+ 
+.spin {
+  display: inline-block;
+  animation: spin 2ms linear infinite;  /* Voegt een draaiende animatie toe */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);  /* Begin met geen rotatie */
+  }
+  to {
+    transform: rotate(360deg);  /* Volledige rotatie van 360 graden */
+  } 
+}
+
+.shake {
+  animation: shake 0.5s; /* Shake for 0.5 seconds */
+}
+
+/* Keyframes for shake animation */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
