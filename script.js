@@ -25,10 +25,10 @@ updateDateTime();
 // Blijf de datum en tijd elke seconde bijwerken
 setInterval(updateDateTime, 1000);
 
-// Spin animation
-function toggleSpin() {
-    const textElement = document.getElementById('spinning-text');
-    textElement.classList.toggle('spin'); }  // Toggle the 'spin' class on click
+// Spin animation for the clicked element
+function toggleSpin(element) {
+    element.classList.toggle('spin'); // Toggle the 'spin' class on the clicked element
+}
 
 // Shake animation
 function toggleShake() {
