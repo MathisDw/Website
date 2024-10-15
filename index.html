@@ -26,17 +26,20 @@
 		<p id="datetime"></p>
 
 		<!-- Hier komt alle inhoud die aan de gebruiker wordt getoond, zoals tekst, afbeeldingen, links, enzovoort. -->
-		<h1 id="home">Mijn favoriete vakantiebestemming</h1>
+		<h1 id="home">Mijn favoriete vakantiebestemming - Ibiza</h1>
 		<!-- Hier komt de datum en tijd die de gebruiker kan zien. -->
 		<p id="datetime"></p>
 		<p>De eerste vakantiebestemming die ik kon bedenken.<br>
-            		Ibiza is ook een mooie bestemming.</p>
+            Ibiza is ook een mooie bestemming.</p>
 
-		<!-- Spinning text -->
-		<p id="spinning-text" onclick="toggleSpin()">
+		<!-- Spinning text, on click -->
+		<p class="spin-text" onclick="toggleSpin(this)">
 			Click me to spin! It's very fun!</p>
 		<br>
-
+		<p class="spin-text" onclick="toggleSpin(this)">&copy;</p>
+		<br>
+		
+		<!-- Shaking image, on click -->
 		<img src="vakantie.jpg" alt="Afbeelding van de bestemming" id="about" class="shakeable" onclick="toggleShake()">
 		<br>
 		<a href="https://www.vakantiediscounter.be/spanje/ibiza?gad_source=1" id="links">Klik hier voor meer info</a>
@@ -71,9 +74,9 @@
 
 		<!-- Onderteken en dateer de pagina, wees beleefd! -->
 		<address>
-			Gemaakt 5 april 2004<br>
-			door Dewulf Mathis<br>
-			6DATA
+			Gemaakt 5 april 2004 <br>
+			by Dewulf Mathis - 6DATA <br>
+			copyright &copy; 2024 - all rights reserved
 		</address>
 		<!-- JavaScript -->
 		<script 
